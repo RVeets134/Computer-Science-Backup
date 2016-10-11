@@ -1,0 +1,17 @@
+
+public class Yahtzee {
+
+	public static void main(String[] args) {
+
+		Die[] dieArray = new Die[5];
+		
+		for(Die n:dieArray)
+		{
+			
+			System.out.println(n.roll());
+			
+		}
+		
+	}
+
+}
