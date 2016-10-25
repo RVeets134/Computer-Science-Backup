@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
+	<item value="3" key="TypeHierarchyViewPart.orientation"/>
+	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
+	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="C:\Users\rakes\Documents\GitHub\ZipCode" key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
@@ -22,6 +27,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+		<item value="false" key="configure_problem_severity_dialog_id"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>

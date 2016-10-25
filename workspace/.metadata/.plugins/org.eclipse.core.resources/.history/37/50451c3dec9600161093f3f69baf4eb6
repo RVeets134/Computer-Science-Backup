@@ -1,0 +1,10 @@
+
+public class zipcode{
+
+	private int zipcode;
+	private String barcode;
+	private Location[] locations;
+	
+}
+
+zipcode(int )
