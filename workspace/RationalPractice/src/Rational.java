@@ -103,6 +103,13 @@ public class Rational
       return multiply (op2.reciprocal());
    }
 
+   public Rational power(int power)
+   {
+	   int numer = (int) Math.pow(numerator,power);
+	   int denom = (int) Math.pow(denominator,power);
+	   return new Rational(numer,denom);
+   }
+   
    //Static methods between rational objects
    
    public static Rational add (Rational op1, Rational op2)
@@ -148,6 +155,13 @@ public class Rational
    {
       return multiply (op1,op2.reciprocal());
    }   
+   
+   public static Rational power(Rational op1, int power)
+   {
+	   int numer = (int) Math.pow(op1.numerator,power);
+	   int denom = (int) Math.pow(op1.denominator,power);
+	   return new Rational(numer,denom);
+   }
    
    //-----------------------------------------------------------------
    //  Returns this rational number as a string.
