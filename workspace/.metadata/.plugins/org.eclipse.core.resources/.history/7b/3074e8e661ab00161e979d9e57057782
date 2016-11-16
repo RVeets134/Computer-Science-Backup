@@ -1,0 +1,13 @@
+public class words 
+{
+
+	public static void main(String[] args) 
+	{
+		dictionary websters = new dictionary (100,10000);
+		System.out.println("Websters Dictionary");
+		websters.printNumberOfPages();
+		websters.definitionMessage();
+
+	}
+
+}

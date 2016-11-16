@@ -1,0 +1,17 @@
+
+public class dictionary extends book
+{
+	
+	private int definitions;
+	
+	public dictionary (int numberOfPages, int numDefinitions)
+	{
+		super (numberOfPages);
+		 definitions = numDefinitions;
+	}
+	public void definitionMessage()
+	{
+		System.out.println("number of definitions: " + definitions);
+		System.out.println("Definitions per page: "  + definitions/pages);
+	}
+}

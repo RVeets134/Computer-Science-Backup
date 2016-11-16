@@ -1,0 +1,13 @@
+
+public class novel extends book{
+	
+	private int characters;
+
+	public novel(int numberOfPages,int numberOfCharacters) {
+
+		super(numberOfPages);
+		characters = numberOfCharacters;
+		
+	}
+
+}

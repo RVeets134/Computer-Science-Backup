@@ -1,0 +1,10 @@
+
+public class novel extends book{
+
+	public novel(int numberOfPages) {
+
+		super(numberOfPages);
+		
+	}
+
+}
