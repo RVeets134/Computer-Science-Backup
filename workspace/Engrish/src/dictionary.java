@@ -19,4 +19,8 @@ public class dictionary extends book
 	{
 		return definitions;
 	}
+	public int getNumberOfPages()
+	{
+		return pages;
+	}
 }

@@ -1,4 +1,4 @@
-public class book 
+public abstract class book 
 {
 	public int pages;
 	
@@ -15,5 +15,7 @@ public class book
 	{
 		return pages;
 	}
-	
+	public int read(int pagesRead) {
+		return 0;
+	}
 }

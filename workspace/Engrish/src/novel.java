@@ -19,5 +19,12 @@ public class novel extends book{
 	{
 		return characters;
 	}
-
+	public int getNumberOfPages()
+	{
+		return pages;
+	}
+	@Override
+	public int read(int pagesRead) {
+		return pages - pagesRead;
+	}
 }
