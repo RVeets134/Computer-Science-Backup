@@ -1,0 +1,43 @@
+
+public class Motorcycle extends Ground{
+
+	private String name;
+	private int passengerLimit;
+	
+	public Motorcycle(String name,int passengerLimit) {
+		
+		super(name,passengerLimit);
+		this.name = name;
+		this.passengerLimit = passengerLimit;
+		
+	}
+	
+	public void move()
+	{
+		
+		System.out.print(name + " is a motorcycle moving on two wheels.");
+		
+	}
+	
+	public String getName()
+	{
+		
+		return name;
+		
+	}
+
+	public int getPassengerLimit()
+	{
+		
+		return passengerLimit;
+		
+	}
+	
+	public String toString()
+	{
+		
+		return "Motorcycle" + "\n" + name + "\n" + "Maximum holding capacity: " + passengerLimit;
+		
+	}
+
+}

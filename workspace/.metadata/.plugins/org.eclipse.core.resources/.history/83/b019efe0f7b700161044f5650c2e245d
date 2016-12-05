@@ -1,0 +1,43 @@
+
+public class Airplane extends Air{
+
+	private String name;
+	private int passengerLimit;
+	
+	public Airplane(String name,int passengerLimit) {
+		
+		super(name,passengerLimit);
+		this.name = name;
+		this.passengerLimit = passengerLimit;
+		
+	}
+	
+	public void move()
+	{
+		
+		System.out.print(name + " is an airplane that is flying.");
+		
+	}
+	
+	public String getName()
+	{
+		
+		return name;
+		
+	}
+	
+	public int getPassengerLimit()
+	{
+		
+		return passengerLimit;
+		
+	}
+	
+	public String toString()
+	{
+		
+		return "Airplane" + "\n" + name + "\n" + "Maximum holding capacity: " + passengerLimit;
+		
+	}
+
+}

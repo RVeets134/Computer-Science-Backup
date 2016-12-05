@@ -1,0 +1,8 @@
+
+public class Sedan {
+
+	public Sedan() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

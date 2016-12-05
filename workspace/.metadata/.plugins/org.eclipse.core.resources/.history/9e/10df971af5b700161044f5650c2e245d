@@ -1,0 +1,22 @@
+
+public class Car extends Ground{
+	
+	private String name;
+	private int passengerLimit;
+	
+	public Car(String name,int passengerLimit) {
+		
+		super(name,passengerLimit);
+		this.name = name;
+		this.passengerLimit = passengerLimit;
+		
+	}
+	
+	public void move()
+	{
+		
+		System.out.print(name + " is moving on four wheels.");
+		
+	}
+
+}
