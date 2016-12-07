@@ -2,11 +2,15 @@
 public class Jet extends Airplane{
 
 	private String name;
+	private int passengerLimit;
+	private String vehicleType;
 	
 	public Jet(String name,int passengerLimit,String vehicleType) {
 		
 		super(name,passengerLimit,vehicleType);
 		this.name = name;
+		this.passengerLimit = passengerLimit;
+		this.vehicleType = vehicleType;
 		
 	}
 	

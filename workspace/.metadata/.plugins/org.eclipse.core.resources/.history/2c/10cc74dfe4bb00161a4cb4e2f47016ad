@@ -1,7 +1,7 @@
 
-public class Air {
+public class Boat {
 
-	public Air() {
+	public Boat() {
 		// TODO Auto-generated constructor stub
 	}
 

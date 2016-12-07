@@ -1,7 +1,7 @@
 
-public class Vehicle {
+public class Helicopter {
 
-	public Vehicle() {
+	public Helicopter() {
 		// TODO Auto-generated constructor stub
 	}
 

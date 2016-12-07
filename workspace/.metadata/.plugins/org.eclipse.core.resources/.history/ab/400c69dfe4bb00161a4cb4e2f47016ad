@@ -1,7 +1,7 @@
 
-public class Ground {
+public class Submarine {
 
-	public Ground() {
+	public Submarine() {
 		// TODO Auto-generated constructor stub
 	}
 

@@ -32,7 +32,7 @@ public abstract class Vehicle implements Military {
 	public String toString()
 	{
 		
-		return "Type of Vehicle: " + vehicleType + "\n" + "Name of Vehicle: " + name + "\n" + "Maximum holding capacity: " + passengerLimit;
+		return "Type of Vehicle: " + vehicleType + "\n" + "Name of Vehicle " + name + "\n" + "Maximum holding capacity: " + passengerLimit;
 		
 	}
 

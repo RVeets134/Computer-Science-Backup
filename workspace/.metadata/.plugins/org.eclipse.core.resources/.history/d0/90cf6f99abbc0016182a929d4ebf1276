@@ -8,7 +8,8 @@ public class Store {
 		Vehicle[] myVehicles = {dhruv,thomas};
 		for(int n = 0;n < myVehicles.length;n++)
 		{
-
+			
+			myVehicles[n].move();
 			System.out.println(myVehicles[n]);
 			
 		}
