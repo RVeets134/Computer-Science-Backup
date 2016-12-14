@@ -1,0 +1,18 @@
+
+public interface SteeringWheel {
+
+	public void turnRight()
+	{
+		
+		System.out.println("The vehicle is turning right.");
+		
+	}
+	
+	public void turnLeft()
+	{
+		
+		System.out.println("The vehicle is turning left.");
+		
+	}
+	
+}

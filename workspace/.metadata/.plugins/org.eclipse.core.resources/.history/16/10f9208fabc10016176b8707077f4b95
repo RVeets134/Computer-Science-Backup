@@ -1,0 +1,60 @@
+
+public class Store {
+
+	public static void main(String[] args) {
+		
+		Vehicle joe = new Car("Joe",5,"SUV");
+		Vehicle tom = new Sedan("Tom",5,"Sedan");
+		Vehicle jack = new SUV("Jack",7,"SUV");
+		Vehicle bill = new Motorcycle("Bill",2,"Motorcycle");
+		Vehicle billy = new Airplane("Billy",560,"Airplane");
+		Vehicle fred = new Jet("Fred",15,"Jet");
+		Vehicle frederick = new Propeller("Frederick",7,"Propeller Plane");
+		Vehicle john = new Helicopter("John",6,"Helicopter");
+		Vehicle ben = new Boat("Ben",4,"Boat");
+		Vehicle wonjae = new Submarine("Wonjae",20,"Submarine");
+		
+		Vehicle[] myVehicles = {joe,tom,jack,bill,billy,fred,frederick,john,ben,wonjae};
+		
+		System.out.println("Information for each vehicle and how they move.");
+		System.out.println();
+		
+		for(int n = 0;n < myVehicles.length;n++)
+		{
+		
+			System.out.println(myVehicles[n]);
+			myVehicles[n].move();
+			System.out.println();
+			
+		}
+		
+		System.out.println("Comparing the holding capacity of the Sedan and SUV.");
+		printCompareResult(tom.getVehicleType(),jack.getVehicleType(),tom.compareTo(jack));
+				
+		System.out.println("Comparing the holding capacity of the Airplane and motorcycle.");
+		printCompareResult(billy.getVehicleType(),bill.getVehicleType(),billy.compareTo(bill));
+		
+		System.out.println("Comparing the holding capacity of the Propeller Plane and SUV.");
+		printCompareResult(frederick.getVehicleType(),jack.getVehicleType(),frederick.compareTo(jack));
+		
+	}
+	
+	private static void printCompareResult(String v1,String v2,int compareToResult)
+	{
+		
+		if(compareToResult < 0)
+		{
+			System.out.println("The " + v1 + " has less seats than the " + v2);
+		}
+		else if(compareToResult > 0)
+		{
+			System.out.println("The " + v1 + " has more seats than the " + v2);
+		}
+		else
+		{
+			System.out.println("The " + v1 + " has the same number of seats as the " + v2);
+		}
+		
+	}
+
+}

@@ -1,16 +1,10 @@
 
 public abstract class Water extends Vehicle{
-
-	private String name;
-	private int passengerLimit;
-	private String vehicleType;
 	
 	public Water(String name,int passengerLimit,String vehicleType) {
 		
+		//Sends values to its parent, the vehicle class
 		super(name,passengerLimit,vehicleType);
-		this.name = name;
-		this.passengerLimit = passengerLimit;
-		this.vehicleType = vehicleType;
 		
 	}
 	
