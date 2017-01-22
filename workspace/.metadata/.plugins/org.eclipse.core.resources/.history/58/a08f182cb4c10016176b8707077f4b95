@@ -1,7 +1,0 @@
-
-public interface Comparable {
-
-	public int compareTo(Vehicle v1);	
-	public int compareTo(Vehicle v1,Vehicle v2);	
-	
-}
