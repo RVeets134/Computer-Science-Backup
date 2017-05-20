@@ -1,0 +1,13 @@
+
+public class Node<Object> {
+	
+	private 
+	
+	public Node(String str, Node<Object> next)
+	{
+		
+		
+		
+	}
+
+}

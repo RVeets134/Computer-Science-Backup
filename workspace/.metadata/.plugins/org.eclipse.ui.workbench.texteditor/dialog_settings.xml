@@ -2,24 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="a" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="String" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="T"/>
+			<item value="bubbleSortStats"/>
+			<item value="max"/>
+			<item value="min"/>
 			<item value="organism"/>
 			<item value="check"/>
 			<item value="currentColumn"/>
 			<item value="currentRow"/>
-			<item value="size"/>
 		</list>
 		<list key="replacehistory">
+			<item value="String"/>
+			<item value="bubbleSortTime"/>
+			<item value="high"/>
+			<item value="low"/>
 			<item value="a"/>
 			<item value="available"/>
 			<item value="c"/>
 			<item value="r"/>
-			<item value="side"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
