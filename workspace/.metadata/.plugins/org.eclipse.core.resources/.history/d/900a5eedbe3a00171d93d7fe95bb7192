@@ -1,9 +1,0 @@
-
-public class CrazyThirteensGUIRunner
-{
-  public static void main(String[] args) {
-    Board board = new CrazyThirteensBoard();
-    CardGameGUI gui = new CardGameGUI(board);
-    gui.displayGame();
-  }
-}

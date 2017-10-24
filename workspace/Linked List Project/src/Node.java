@@ -1,39 +1,44 @@
 
-public class Node<String> 
+public class Node
 {
 	
-	private String data;
-	private Node<String> next;		
+	private String name;
+	private Node next;		
 	
-	public Node(String data, Node<String> next) 
+	public Node(String name, Node next) 
 	{
-		this.data = data;
+		this.name = name;
 		this.next = next;
 	}
 
+	//Returns node as string
 	public String getData()
 	{
-		return data;
+		return name;
 	}
 
-	public void setData(String data)
+	//Can change string value of node
+	public void setData(String name)
 	{
-		this.data = data;
+		this.name = name;
 	}
 
-	public Node<String> getNext()
+	//Returns the next node in the linked list
+	public Node getNext()
 	{
 		return next;
 	}
 
-	public void setNext(Node<String> next)
+	//Allows user to set the next node in the linked list
+	public void setNext(Node next)
 	{
 		this.next = next;
 	}
 
+	//Prints the data of the node
 	public String toString()
 	{
-		return data;
+		return name;
 	}
 
 }

@@ -1,114 +1,128 @@
-public class LinkedList<String> 
+public class LinkedList
 {
 	
-	private Node<String> head;
+	private Node list;
 	private int size = 0;
 
 	public LinkedList()
 	{
-		head = null;
+		list = null;
 	}
 
+	/**
+	 * Allows user to add a node to the linked list
+	 * @param add - String to add as a node to the linked list
+	 */
 	public void add(String add)
 	{
-		size ++;
 
-		Node<String> tempAdd = new Node<String>(add,null);
+		//If list is empty, then create a new node for the first node
+		if(list == null)
+		{
+			list = new Node(add,null);
+		}
+	
+		Node temp = new Node(add,null);
+		Node current = list;
 
-		if(head == null)
+		if(current != null)
 		{
-			head = tempAdd;
-		}
-		else if(tempAdd.toString().compareToIgnoreCase(head.toString()) < 0) 
-		{
-			tempAdd.setNext(head);
-			head = tempAdd;
-		}
-		else 
-		{
-			Node<String> nodeRight = head.getNext();
-			Node<String> nodeLeft = head;
-			boolean flag = false;
-			while (nodeRight != null && !flag)
+			
+			//Keeps going through the list until it gets to the last node
+			while(current.getNext() != null)
 			{
-				 if(tempAdd.toString().compareToIgnoreCase(nodeRight.toString()) < 0) 
-				 {
-					 flag = true;
-				 } 
-				 else
-				 {
-					 nodeLeft = nodeRight;
-					 nodeRight = nodeRight.getNext();
-				 }
+				current = current.getNext();
 			}
-			tempAdd.setNext(nodeLeft.getNext());
-			nodeLeft.setNext(tempAdd);
-		}
+			
+			//Adds the node at the end of the list
+			current.setNext(temp);
+			
+		}		
+		
+		size ++;
+		
 	}
 
+	/**
+	 * Allows user to delete a certain node from the linked list
+	 * @param delete - String to delete from the linked list
+	 */
 	public void delete(String delete)
 	{
 
-		Boolean flag = false;
+		//Checks to see whether the string has been deleted or not
+		Boolean deleted = false;
 
-		if( head != null) 
+		if(list != null) 
 		{
 
-			while(head.toString().equalsIgnoreCase(delete.toString())) 
+			//Check the first node in the list
+			if(list.toString().equals(delete)) 
 			{
-				head = head.getNext();
-				flag = true;
+				//Assign the next node to the first one, deleting the first one in the process
+				list = list.getNext();
 				size--;
+				deleted = true;
 			}
 
-			Node<String> nodeLeft = head;
-			Node<String> nodeRight = head.getNext();
+			//Set up two adjacent nodes for comparison, starting from the beginning
+			Node left = list;
+			Node right = list.getNext();
 
-			while (nodeRight != null)
+			//Start traversing through the list
+			while(right != null)
 			{
-					if (nodeRight.toString().equalsIgnoreCase(delete.toString()))
+				
+					//Target string is in the next node
+					if(right.toString().equals(delete))
 					{
-						nodeLeft.setNext(nodeRight.getNext());
-						nodeRight = nodeLeft.getNext();
-						flag = true;
+						left.setNext(right.getNext());
 						size--;
+						deleted = true;
 					} 
 					else 
 					{
-						nodeLeft = nodeRight;
-						nodeRight = nodeLeft.getNext();
+						left = right;
+						right = left.getNext();
 					}
 			}
 
-			if (!flag)
+			//Lets user know that the word could not be found
+			if (!deleted)
 			{
-				System.out.println("Unable to delete: " + delete.toString());
+				System.out.println("Could not find: " + delete);
 			}
 		}
 	}
 
+	//Returns the number of nodes in the linked list
 	public int size()
 	{
 		return size;
 	}
 
+	//Prints the contents of the linked list, each on a separate line
 	public String toString()
 	{
-		String temp = "";
-		Node<String> tempNode = head;
-		if(tempNode == null)
+		
+		String str = "";
+		Node temp = list;
+		
+		if(temp == null)
 		{
-			return temp;
+			return str;
 		}
 		else
 		{
-			while(tempNode != null)
+			
+			//Keep printing each node on a different line until there are no more
+			while(temp != null)
 			{
-				temp = temp + tempNode.toString() + ";";
-				tempNode = tempNode.getNext();
+				str = str + temp.toString() + "\n";
+				temp = temp.getNext();
 			}
 		}
-		return temp;
+		return str;
 	}
 
 }
